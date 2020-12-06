@@ -79,7 +79,18 @@
 
 $(document).ready(function(){
 
-// Your code here...
+//test jQuery syntax affect on DOM
+var firstNumber;
+
+
+$("button").on("click", function(event){
+
+   firstNumber = $(this).attr("value");
+
+    $("#first-number").append(firstNumber);
+    
+    console.log(event.target.id);
+})
 
 
 });
